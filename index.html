@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauli Spa - Best Ayurvedic Massage in Pune | Kothrud</title>
+  <meta name="description" content="Mauli Spa - Pune ka best Ayurvedic Massage center. Deep Tissue, Potli, Couple Massage aur bahut kuch. Karve Road, Kothrud. Book Now!">
+  <meta name="keywords" content="Best Spa in Pune, Ayurvedic Massage Kothrud, Mauli Spa Services, Massage Therapy Karve Road, Deep Tissue Massage Pune">
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Mauli Spa - Jahan Sukoon Milta Hai">
+  <meta property="og:description" content="Prachin Ayurvedic Paddhati se Payein Sampoorna Swasthya. Book Your Session Today!">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&h=630&fit=crop">
+  <meta property="og:url" content="https://maulispa.in">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mauli Spa - Jahan Sukoon Milta Hai">
+  <meta name="twitter:description" content="Best Ayurvedic Massage Therapy in Pune, Kothrud">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&h=630&fit=crop">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://maulispa.in">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DaySpa",
+    "name": "Mauli Spa",
+    "description": "Best Ayurvedic Massage Therapy in Pune",
+    "url": "https://maulispa.in",
+    "telephone": "+919307360513",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No 112, First Floor, The Business Hub, Karve Rd",
+      "addressLocality": "Kothrud",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411038",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Su 10:00-21:00",
+    "priceRange": "₹₹"
+  }
+  </script>
+</head>
+<body>
+
+<!-- ===== OFFER NOTIFICATION POPUP ===== -->
+<div id="offerNotification" class="offer-notification">
+  <div class="offer-inner">
+    <span class="offer-star">⭐</span>
+    <div class="offer-text">
+      <strong>Special Offer!</strong>
+      <p>Pehle 50 Members ke liye Join karte hi <strong>FREE Facial</strong> + 20% Off First Session!</p>
+    </div>
+    <button class="offer-close" onclick="closeOffer()">✕</button>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header id="mainHeader" class="header">
+  <div class="header-inner">
+    <a href="#home" class="logo-area" onclick="showPage('home')">
+      <div class="logo-icon">
+        <img src="https://via.placeholder.com/60x60/8B6914/FFFFFF?text=M" alt="Mauli Spa Logo" id="logoImg" class="logo-img">
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">Mauli Spa</span>
+        <span class="logo-tagline">Mauli Ayurvedic Massage Therapy</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#" class="nav-link active" onclick="showPage('home');setActive(this)">Home</a>
+      <a href="#" class="nav-link" onclick="showPage('therapies');setActive(this)">Wellness Therapies</a>
+      <a href="#" class="nav-link" onclick="showPage('gallery');setActive(this)">Gallery</a>
+      <a href="#" class="nav-link" onclick="showPage('membership');setActive(this)">Membership Plan</a>
+      <a href="#" class="nav-link" onclick="showPage('about');setActive(this)">About</a>
+      <a href="#" class="nav-link" onclick="showPage('contact');setActive(this)">Contact Us</a>
+      <a href="#" class="nav-link" onclick="showPage('more');setActive(this)">More</a>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Language Switcher -->
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn" onclick="toggleLang()">
+          <i class="fas fa-globe"></i>
+          <span id="currentLang">HI</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button onclick="setLang('hi')">🇮🇳 हिंदी</button>
+          <button onclick="setLang('en')">🇬🇧 English</button>
+          <button onclick="setLang('mr')">मराठी</button>
+          <button onclick="setLang('ta')">தமிழ்</button>
+          <button onclick="setLang('te')">తెలుగు</button>
+          <button onclick="setLang('bn')">বাংলা</button>
+          <button onclick="setLang('gu')">ગુજરાતી</button>
+          <button onclick="setLang('kn')">ಕನ್ನಡ</button>
+        </div>
+      </div>
+      <!-- Visit Counter -->
+      <div class="visit-counter">
+        <i class="fas fa-eye"></i>
+        <span id="visitCount">0</span>
+      </div>
+      <!-- Mobile Menu -->
+      <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGES CONTAINER ===== -->
+<main id="pagesContainer">
+
+  <!-- ============================================================ -->
+  <!-- PAGE 1: HOME -->
+  <!-- ============================================================ -->
+  <div id="page-home" class="page active">
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-slides">
+        <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&h=1080&fit=crop')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1920&h=1080&fit=crop')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=1920&h=1080&fit=crop')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1920&h=1080&fit=crop')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1920&h=1080&fit=crop')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=1920&h=1080&fit=crop')"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-sub" data-i18n="heroSub">Prachin Ayurvedic Paddhati</p>
+        <h1 class="hero-title" data-i18n="heroTitle">Rejuvenate Your<br><em>Soul and Body</em></h1>
+        <p class="hero-desc" data-i18n="heroDesc">Apne Shareer aur Mann ko Sampoorna Swasthya pradan karein</p>
+        <div class="hero-btns">
+          <button class="btn-gold" onclick="showPage('contact')" data-i18n="bookSession">Book Your Session</button>
+          <a href="https://wa.me/c/919307360513" target="_blank" class="btn-outline" data-i18n="viewCatalogue">View Catalogue</a>
+        </div>
+      </div>
+      <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <!-- Top Demanding Therapies -->
+    <section class="section top-therapies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge" data-i18n="topDemand">Top Demanding Therapies</span>
+          <h2 data-i18n="featuredServices">Our Featured Services</h2>
+        </div>
+        <div class="top-therapy-cards">
+          <div class="top-card featured">
+            <div class="top-card-badge">Most Popular</div>
+            <div class="top-card-img" style="background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=400&fit=crop')"></div>
+            <div class="top-card-body">
+              <h3>Deep Tissue Therapy</h3>
+              <p>Dard se rahat ke liye. Muscle tension aur chronic pain mein rahat.</p>
+              <div class="top-card-meta">
+                <span class="price">₹2,199</span>
+                <span class="duration"><i class="fas fa-clock"></i> 70 mins</span>
+              </div>
+              <button class="btn-gold btn-sm" onclick="showPage('contact')">Book Now</button>
+            </div>
+          </div>
+          <div class="top-card">
+            <div class="top-card-img" style="background-image:url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=400&fit=crop')"></div>
+            <div class="top-card-body">
+              <h3>Back Pain Massage</h3>
+              <p>Peeth dard se turant rahat. Certified therapists dwara.</p>
+              <div class="top-card-meta">
+                <span class="price">₹999</span>
+                <span class="duration"><i class="fas fa-clock"></i> 30 mins</span>
+              </div>
+              <button class="btn-gold btn-sm" onclick="showPage('contact')">Book Now</button>
+            </div>
+          </div>
+          <div class="top-card">
+            <div class="top-card-img" style="background-image:url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=600&h=400&fit=crop')"></div>
+            <div class="top-card-body">
+              <h3>Leg Pain Massage</h3>
+              <p>Pair dard se rahat. Specially designed for long working hours.</p>
+              <div class="top-card-meta">
+                <span class="price">₹999</span>
+                <span class="duration"><i class="fas fa-clock"></i> 30 mins</span>
+              </div>
+              <button class="btn-gold btn-sm" onclick="showPage('contact')">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Mauli Section -->
+    <section class="section why-mauli">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-badge">Why Choose Us</span>
+          <h2 data-i18n="whyMauli">Why Mauli Ayurvedic Massage Therapy?</h2>
+          <p data-i18n="whyDesc">Hum dusron se alag kyun hain?</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-user-md"></i></div>
+            <h3>Expert Therapists</h3>
+            <p>Experienced aur certified staff with Familier Nature. Aapki har zaroorat ko samjha jaata hai.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-leaf"></i></div>
+            <h3>Pure Ayurvedic Oils</h3>
+            <p>100% natural aur jadi-bootiyon se bane tel. Koi chemical nahi, sirf prakriti ki shakti.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-spa"></i></div>
+            <h3>Peaceful Ambience</h3>
+            <p>Shor-sharabe se door ek shant vatavaran. Jahaan aap truly relax kar sakte hain.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Hygiene Standards</h3>
+            <p>Disposable sheets aur sanitized rooms. Aapki safety hamari pehli priority hai.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-certificate"></i></div>
+            <h3>Certified Center</h3>
+            <p>Government certified Ayurvedic massage center. Vishwasniya aur praamanik seva.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-clock"></i></div>
+            <h3>Flexible Timings</h3>
+            <p>Mon - Sun: 10 AM - 9 PM. Aapki convenience ke hisaab se book karein.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-badge">Benefits</span>
+          <h2>Aapko Kya Milega?</h2>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-visual">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop" alt="Stress Relief">
+              <div class="benefit-overlay">
+                <i class="fas fa-brain"></i>
+                <h3>Stress Relief</h3>
+                <p>Stress aur Anxiety se mukti</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-visual">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop" alt="Blood Circulation">
+              <div class="benefit-overlay">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Blood Circulation</h3>
+                <p>Behtar Blood Circulation</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-visual">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Skin Glow">
+              <div class="benefit-overlay">
+                <i class="fas fa-star"></i>
+                <h3>Skin Glow</h3>
+                <p>Skin ka Glow badhana</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-visual">
+              <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=300&fit=crop" alt="Joint Pain">
+              <div class="benefit-overlay">
+                <i class="fas fa-bone"></i>
+                <h3>Joint Pain Relief</h3>
+                <p>Joint pain mein relief</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-badge">Google Reviews</span>
+          <h2>Hamara Clients Kya Kehte Hain?</h2>
+          <div class="google-rating">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo">
+            <div class="stars">★★★★★</div>
+            <span>4.8 / 5 (200+ Reviews)</span>
+          </div>
+        </div>
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="test-stars">★★★★★</div>
+            <p>"Deep Tissue Massage ke baad meri back pain bilkul theek ho gayi. Therapists bahut professional hain. Highly recommended!"</p>
+            <div class="test-author">
+              <div class="test-avatar">R</div>
+              <div><strong>Rahul Sharma</strong><span>Kothrud, Pune</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="test-stars">★★★★★</div>
+            <p>"Mauli Spa ka ambience bahut peaceful hai. Oils pure hain, therapists certified hain. Membership lene ke baad se regular aa rahi hoon."</p>
+            <div class="test-author">
+              <div class="test-avatar">P</div>
+              <div><strong>Priya Kulkarni</strong><span>Karve Road, Pune</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="test-stars">★★★★★</div>
+            <p>"Best ayurvedic massage center in Pune. Potli massage ne mere joint pain mein bahut rahat di. Staff bahut cooperative hai."</p>
+            <div class="test-author">
+              <div class="test-avatar">A</div>
+              <div><strong>Amit Desai</strong><span>Pune</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="test-stars">★★★★★</div>
+            <p>"IT sector mein kaam karne se bahut stress tha. Mauli Spa ne sach mein sukoon diya. Ab har 2 hafte mein aata hoon!"</p>
+            <div class="test-author">
+              <div class="test-avatar">S</div>
+              <div><strong>Suresh Nair</strong><span>Hinjawadi, Pune</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="test-stars">★★★★★</div>
+            <p>"Couple massage experience ekdum romantic aur relaxing tha. Anniversary ke liye perfect gift tha hamare liye!"</p>
+            <div class="test-author">
+              <div class="test-avatar">M</div>
+              <div><strong>Meera & Rohan</strong><span>Deccan, Pune</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking CTA Banner -->
+    <section class="booking-banner">
+      <div class="container">
+        <div class="booking-banner-inner">
+          <div class="booking-text">
+            <h2 data-i18n="startJourney">Aaj Hi Apna Wellness Journey Shuru Karein</h2>
+            <p>Hamse baat karein aur apna perfect therapy plan banayein</p>
+          </div>
+          <div class="booking-actions">
+            <button class="btn-gold" onclick="showPage('contact')">Book Your Session</button>
+            <a href="tel:9156972622" class="btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-home -->
+
+  <!-- ============================================================ -->
+  <!-- PAGE 2: WELLNESS THERAPIES -->
+  <!-- ============================================================ -->
+  <div id="page-therapies" class="page">
+    <div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&h=600&fit=crop')">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1>Wellness Therapies</h1>
+        <p>Prachin Ayurvedic Kala se Payein Sampoorna Swasthya</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-badge">All Services</span>
+          <h2>Hamari Wellness Therapies</h2>
+          <p>Har therapy scientifically designed hai aapki health ke liye</p>
+        </div>
+
+        <div class="therapies-grid" id="therapiesGrid">
+          <!-- Cards generated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Hygiene Section -->
+    <section class="section hygiene-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-badge">Safety First</span>
+          <h2>Hamari Hygiene Standards</h2>
+        </div>
+        <div class="hygiene-grid">
+          <div class="hygiene-item"><i class="fas fa-user-md"></i><h4>Certified Therapists</h4><p>Professional aur certified therapists ki team</p></div>
+          <div class="hygiene-item"><i class="fas fa-leaf"></i><h4>Pure Natural Oils</h4><p>100% natural oils ka istemal</p></div>
+          <div class="hygiene-item"><i class="fas fa-broom"></i><h4>Disposable Sheets</h4><p>Har session mein fresh disposable sheets</p></div>
+          <div class="hygiene-item"><i class="fas fa-spray-can"></i><h4>Sanitized Rooms</h4><p>Rooms after every session deep sanitized</p></div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-therapies -->
+
+  <!-- ============================================================ -->
+  <!-- PAGE 3: GALLERY -->
+  <!-- ============================================================ -->
+  <div id="page-gallery" class="page">
+    <div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=1920&h=600&fit=crop')">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1>Gallery</h1>
+        <p>Hamara Shant aur Sundar Vatavaran Dekhein</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <!-- Virtual Tour Video -->
+        <div class="virtual-tour">
+          <h2 class="text-center">Virtual Tour</h2>
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline class="tour-video">
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay-text">
+              <h3>Mauli Spa - Virtual Tour</h3>
+              <p>Aayein aur experience karein hamare shant vatavaran ko</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Feed Banner -->
+        <div class="instagram-section">
+          <h3><i class="fab fa-instagram"></i> Follow Us on Instagram</h3>
+          <p>@maulispa</p>
+          <a href="https://instagram.com/maulispa" target="_blank" class="btn-gold">Follow Now</a>
+        </div>
+
+        <!-- Masonry Gallery -->
+        <div class="masonry-grid" id="masonryGrid">
+          <!-- Generated by JS -->
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+          <button class="lightbox-close">✕</button>
+          <button class="lightbox-prev" onclick="event.stopPropagation();lightboxNav(-1)">‹</button>
+          <img id="lightboxImg" src="" alt="">
+          <button class="lightbox-next" onclick="event.stopPropagation();lightboxNav(1)">›</button>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-gallery -->
+
+  <!-- ============================================================ -->
+  <!-- PAGE 4: MEMBERSHIP -->
+  <!-- ============================================================ -->
+  <div id="page-membership" class="page">
+    <div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1920&h=600&fit=crop')">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1>Wellness Membership</h1>
+        <p>Har baar pay karne ki jhanjhat chhodein aur Wellness Journey ko apni lifestyle ka hissa banayein</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <!-- Limited Offer Banner -->
+        <div class="limited-offer">
+          <span class="pulse-dot"></span>
+          <strong>Limited Period Offer!</strong> Pehle 50 Members ke liye Join karte hi ek <strong>FREE Facial</strong> milega!
+        </div>
+
+        <!-- Savings Calculator -->
+        <div class="savings-calculator">
+          <h3>Savings Calculator</h3>
+          <div class="savings-inner">
+            <div class="savings-box red">
+              <span>Normal Price</span>
+              <strong>₹2,000/session</strong>
+            </div>
+            <div class="savings-arrow">→</div>
+            <div class="savings-box green">
+              <span>Member Price</span>
+              <strong>₹1,200/session</strong>
+            </div>
+            <div class="savings-result">
+              <span>Annual Savings</span>
+              <strong>₹9,600</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plans -->
+        <div class="plans-grid">
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Silver</h3>
+              <div class="plan-price">₹2,199<span>/month</span></div>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> 1 Session per month</li>
+              <li><i class="fas fa-check"></i> 5% Off on extra sessions</li>
+              <li class="no"><i class="fas fa-times"></i> Guest Pass</li>
+              <li class="no"><i class="fas fa-times"></i> Priority Support</li>
+              <li class="no"><i class="fas fa-times"></i> Extended Duration</li>
+            </ul>
+            <button class="btn-outline" onclick="showPage('contact')">Join Silver</button>
+          </div>
+          <div class="plan-card best-seller">
+            <div class="plan-badge">Best Seller ⭐</div>
+            <div class="plan-header">
+              <h3>Gold</h3>
+              <div class="plan-price">₹4,199<span>/month</span></div>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> 2 Sessions per month</li>
+              <li><i class="fas fa-check"></i> 15% Off on extra sessions</li>
+              <li><i class="fas fa-check"></i> 1 Guest Pass/month</li>
+              <li><i class="fas fa-check"></i> Priority Support</li>
+              <li><i class="fas fa-check"></i> 30 days validity</li>
+            </ul>
+            <button class="btn-gold" onclick="showPage('contact')">Join Gold</button>
+          </div>
+          <div class="plan-card platinum">
+            <div class="plan-header">
+              <h3>Platinum</h3>
+              <div class="plan-price">₹8,099<span>/month</span></div>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> 4 Sessions per month</li>
+              <li><i class="fas fa-check"></i> 25% Off on extra sessions</li>
+              <li><i class="fas fa-check"></i> 2 Guest Pass/month</li>
+              <li><i class="fas fa-check"></i> Priority Support</li>
+              <li><i class="fas fa-check"></i> 5 days + 30 days validity</li>
+            </ul>
+            <button class="btn-outline" onclick="showPage('contact')">Join Platinum</button>
+          </div>
+        </div>
+
+        <!-- Member Testimonials -->
+        <div class="member-testimonials">
+          <h3 class="text-center">Our Happy Members</h3>
+          <div class="member-test-grid">
+            <div class="member-test-card">
+              <p>"Membership lene ke baad se meri back pain ki samasya khatam ho gayi kyunki ab main regular hoon."</p>
+              <strong>- Aakash Mehta, Gold Member</strong>
+            </div>
+            <div class="member-test-card">
+              <p>"Gold membership best value for money hai. Guest pass se maine apni wife ko bhi treat kiya!"</p>
+              <strong>- Vikram Joshi, Gold Member</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQs -->
+        <div class="faqs-section">
+          <h3 class="text-center">Frequently Asked Questions</h3>
+          <div class="faq-list" id="membershipFaqs">
+            <div class="faq-item">
+              <button class="faq-q" onclick="toggleFaq(this)">Kya main apni membership cancel kar sakta hoon? <span>+</span></button>
+              <div class="faq-a">Haan, aap kisi bhi time membership cancel kar sakte hain. Unused sessions ka refund pro-rata basis par diya jaata hai. Cancel karne ke liye hamse contact karein.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" onclick="toggleFaq(this)">Kya unused sessions agle mahine carry forward honge? <span>+</span></button>
+              <div class="faq-a">Haan! Unused sessions next month mein carry forward hote hain. Aapke paise kabhi expire nahi hote.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" onclick="toggleFaq(this)">Kya main ye membership kisi aur ko gift kar sakta hoon? <span>+</span></button>
+              <div class="faq-a">Bilkul! Membership aap kisi bhi priyajan ko gift kar sakte hain. Gift card bhi available hai.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" onclick="toggleFaq(this)">Kya pre-booking zaroori hai? <span>+</span></button>
+              <div class="faq-a">Members ke liye walk-in available hai, lekin advance booking recommend ki jaati hai taaki aapki preferred time slot confirm ho sake.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-membership -->
+
+  <!-- ============================================================ -->
+  <!-- PAGE 5: ABOUT -->
+  <!-- ============================================================ -->
+  <div id="page-about" class="page">
+    <div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=1920&h=600&fit=crop')">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1>About Mauli Spa</h1>
+        <p>Jahan Sukoon Milta Hai</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-story">
+            <span class="section-badge">Our Story</span>
+            <h2>Mauli Spa ki Kahani</h2>
+            <p>Mauli Spa ki shuruat ek sapne se hui — ek aisa jagah banana jahan log apni daily life ki bhagdaud se bahar aa sakein aur sach mein relax kar sakein.</p>
+            <p>Prachin Ayurvedic traditions aur modern wellness practices ko mila kar, humne ek aisa sanctuary create kiya hai jo aapke shareer, mann aur aatma ko poshan deta hai.</p>
+            <p>Hamara mission sirf massage dena nahi hai — balki aapki life mein sustained wellness laana hai. Isliye hamare therapists not only technically skilled hain, balki genuinely caring bhi hain.</p>
+            <div class="about-stats">
+              <div class="stat"><strong>5+</strong><span>Saal ka Anubhav</span></div>
+              <div class="stat"><strong>5000+</strong><span>Khush Clients</span></div>
+              <div class="stat"><strong>12+</strong><span>Therapies</span></div>
+              <div class="stat"><strong>4.8★</strong><span>Google Rating</span></div>
+            </div>
+          </div>
+          <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=700&fit=crop" alt="Mauli Spa Interior">
+          </div>
+        </div>
+
+        <!-- Vision & Mission -->
+        <div class="vision-grid">
+          <div class="vision-card">
+            <div class="vision-icon"><i class="fas fa-eye"></i></div>
+            <h3>Our Vision</h3>
+            <p>Stress-free lifestyle promote karna aur har ek client ko sampoorna swasthya ki taraf guide karna.</p>
+          </div>
+          <div class="vision-card">
+            <div class="vision-icon"><i class="fas fa-heart"></i></div>
+            <h3>Our Mission</h3>
+            <p>Prachin Ayurvedic wisdom ko modern comfort ke saath combine karke aapko best healing experience dena.</p>
+          </div>
+          <div class="vision-card">
+            <div class="vision-icon"><i class="fas fa-seedling"></i></div>
+            <h3>Our Values</h3>
+            <p>Authenticity, purity, care aur continuous improvement — ye hamare core values hain jo humein guide karte hain.</p>
+          </div>
+        </div>
+
+        <!-- Trust Factors -->
+        <div class="trust-section">
+          <h3 class="text-center">Hamara Trust</h3>
+          <div class="trust-badges">
+            <div class="trust-badge"><i class="fas fa-certificate"></i><span>Certified Therapists</span></div>
+            <div class="trust-badge"><i class="fas fa-leaf"></i><span>100% Organic Oils</span></div>
+            <div class="trust-badge"><i class="fas fa-shield-alt"></i><span>Sanitized Environment</span></div>
+            <div class="trust-badge"><i class="fas fa-star"></i><span>5000+ Happy Clients</span></div>
+          </div>
+        </div>
+
+        <!-- Team -->
+        <div class="team-section">
+          <h3 class="text-center">Our Team</h3>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-img" style="background-image:url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&h=300&fit=crop&face')"></div>
+              <h4>Dr. Savita Mauli</h4>
+              <p>Founder & Head Therapist</p>
+              <span>15+ Years Experience</span>
+            </div>
+            <div class="team-card">
+              <div class="team-img" style="background-image:url('https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?w=300&h=300&fit=crop')"></div>
+              <h4>Priya Sharma</h4>
+              <p>Senior Ayurvedic Therapist</p>
+              <span>8+ Years Experience</span>
+            </div>
+            <div class="team-card">
+              <div class="team-img" style="background-image:url('https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=300&h=300&fit=crop')"></div>
+              <h4>Ravi Kumar</h4>
+              <p>Deep Tissue Specialist</p>
+              <span>6+ Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-about -->
+
+  <!-- ============================================================ -->
+  <!-- PAGE 6: CONTACT -->
+  <!-- ============================================================ -->
+  <div id="page-contact" class="page">
+    <div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1920&h=600&fit=crop')">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1>Contact Us</h1>
+        <p>Hum aapka swagat karne ke liye intezar kar rahe hain</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Contact Form -->
+          <div class="contact-form-wrap">
+            <h2>Start Your Wellness Journey</h2>
+            <p>Apna naam aur number daalein — hum aapse 15 minutes mein contact karenge!</p>
+            <div class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" id="contactName" placeholder="Aapka naam" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label>Mobile Number *</label>
+                <input type="tel" id="contactPhone" placeholder="+91 XXXXX XXXXX" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label>Service Interested In</label>
+                <select id="contactService">
+                  <option value="">Select a therapy...</option>
+                  <option>Spa Pack - ₹3,999</option>
+                  <option>Potli Massage - ₹2,999</option>
+                  <option>Couple Massage - ₹2,899</option>
+                  <option>Medicinal Oil Massage - ₹2,499</option>
+                  <option>Deep Tissue Massage - ₹2,199</option>
+                  <option>Aloe Vera Gel Massage - ₹1,999</option>
+                  <option>Cream Massage - ₹1,799</option>
+                  <option>Til Tel Massage - ₹1,499</option>
+                  <option>Powder Massage - ₹1,299</option>
+                  <option>Facial - ₹999</option>
+                  <option>Back Pain Massage - ₹999</option>
+                  <option>Leg Pain Massage - ₹999</option>
+                  <option>Foot Massage - ₹499</option>
+                  <option>Head Massage - ₹499</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Preferred Date</label>
+                  <input type="date" id="contactDate">
+                </div>
+                <div class="form-group">
+                  <label>Preferred Time</label>
+                  <select id="contactTime">
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>5:00 PM</option>
+                    <option>6:00 PM</option>
+                    <option>7:00 PM</option>
+                    <option>8:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Message (Optional)</label>
+                <textarea id="contactMsg" placeholder="Koi special requirements ya questions?" rows="3"></textarea>
+              </div>
+              <button class="btn-gold btn-full" onclick="submitForm()">Start Your Wellness Journey 🌿</button>
+            </div>
+            <div class="success-msg" id="successMsg" style="display:none">
+              <i class="fas fa-check-circle"></i>
+              <h3>Thank You!</h3>
+              <p>Aapka message mil gaya. Hum 15 minutes mein call karenge!</p>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info-wrap">
+            <div class="contact-info-card">
+              <h3>Hamare Baare Mein</h3>
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Address</strong>
+                  <p>Shop No 112, First Floor, The Business Hub, Karve Rd, opposite Mirch Masala Restaurant, Happy Colony, Kothrud, Pune, Maharashtra 411038</p>
+                  <small>Landmark: Near Mirch Masala Restaurant</small>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>Call Us</strong>
+                  <p><a href="tel:9156972622">9156972622</a> | <a href="tel:9307360513">9307360513</a></p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <strong>Working Hours</strong>
+                  <p>Monday - Sunday: 10 AM - 9 PM</p>
+                  <small>Open all 7 days!</small>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <a href="https://wa.me/919307360513" target="_blank" class="btn-whatsapp-small">Chat on WhatsApp</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQs -->
+            <div class="contact-faqs">
+              <h4>Quick FAQs</h4>
+              <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">Kya pre-booking zaroori hai? <span>+</span></button>
+                <div class="faq-a">Walk-in available hai, lekin advance booking recommended hai for guaranteed slot.</div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">Kya wahan parking space available hai? <span>+</span></button>
+                <div class="faq-a">Haan, The Business Hub mein ample parking available hai.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="map-section">
+          <h3 class="text-center">Find Us on Map</h3>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.1!2d73.8156!3d18.5074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMwJzI2LjYiTiA3M8KwNDgnNTYuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-contact -->
+
+  <!-- ============================================================ -->
+  <!-- PAGE 7: MORE -->
+  <!-- ============================================================ -->
+  <div id="page-more" class="page">
+    <div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1920&h=600&fit=crop')">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1>More from Mauli Spa</h1>
+        <p>Additional Resources & Information</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="more-grid">
+          <div class="more-card" onclick="showPage('therapies')">
+            <i class="fas fa-spa"></i>
+            <h3>All Therapies</h3>
+            <p>Hamare sabhi wellness therapies dekhein</p>
+          </div>
+          <div class="more-card" onclick="showPage('membership')">
+            <i class="fas fa-crown"></i>
+            <h3>Membership Plans</h3>
+            <p>Regular clients ke liye special plans</p>
+          </div>
+          <a class="more-card" href="https://wa.me/c/919307360513" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <h3>E-Catalogue</h3>
+            <p>WhatsApp par poora catalogue dekhein</p>
+          </a>
+          <div class="more-card" onclick="showPage('gallery')">
+            <i class="fas fa-images"></i>
+            <h3>Photo Gallery</h3>
+            <p>Hamara sundar center dekhein</p>
+          </div>
+          <a class="more-card" href="https://instagram.com/maulispa" target="_blank">
+            <i class="fab fa-instagram"></i>
+            <h3>Instagram</h3>
+            <p>Latest updates aur tips follow karein</p>
+          </a>
+          <a class="more-card" href="https://facebook.com/@maulispa" target="_blank">
+            <i class="fab fa-facebook"></i>
+            <h3>Facebook</h3>
+            <p>Community se jodein aur offers paayein</p>
+          </a>
+          <a class="more-card" href="https://youtube.com/@maulispa" target="_blank">
+            <i class="fab fa-youtube"></i>
+            <h3>YouTube</h3>
+            <p>Wellness tips aur videos dekhein</p>
+          </a>
+          <div class="more-card" onclick="showPage('contact')">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Book Appointment</h3>
+            <p>Abhi booking karein</p>
+          </div>
+        </div>
+
+        <!-- Blog/Tips Section -->
+        <div class="tips-section">
+          <h3 class="text-center">Wellness Tips</h3>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-img" style="background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=200&fit=crop')"></div>
+              <div class="tip-body">
+                <span class="tip-tag">Ayurveda</span>
+                <h4>Sardi mein Abhyanga ka Mahatva</h4>
+                <p>Sardi ke mausam mein daily oil massage se immunity boost hoti hai...</p>
+              </div>
+            </div>
+            <div class="tip-card">
+              <div class="tip-img" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop')"></div>
+              <div class="tip-body">
+                <span class="tip-tag">IT Wellness</span>
+                <h4>IT Professionals ke liye Back Care Tips</h4>
+                <p>Ghanton baithne ke baad back stretch exercises aur massage kaise karein...</p>
+              </div>
+            </div>
+            <div class="tip-card">
+              <div class="tip-img" style="background-image:url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=400&h=200&fit=crop')"></div>
+              <div class="tip-body">
+                <span class="tip-tag">Stress</span>
+                <h4>Stress Management: Ayurvedic Way</h4>
+                <p>Ancient techniques se modern stress ko kaise manage karein...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-more -->
+
+</main><!-- /pagesContainer -->
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="https://via.placeholder.com/50x50/D4AF37/000000?text=M" alt="Mauli Spa">
+            <div>
+              <strong>Mauli Spa</strong>
+              <small>Jahan Sukoon Milta Hai</small>
+            </div>
+          </div>
+          <p class="footer-bio">Mauli Spa — Pune ka premier Ayurvedic wellness center. Prachin wisdom aur modern comfort ka sangam.</p>
+          <div class="social-links">
+            <a href="https://instagram.com/maulispa" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/@maulispa" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://youtube.com/@maulispa" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/919307360513" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('therapies')">Wellness Therapies</a></li>
+            <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+            <li><a href="#" onclick="showPage('membership')">Wellness Membership</a></li>
+            <li><a href="#" onclick="showPage('about')">About Us</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+            <li><a href="#" onclick="showPage('more')">More</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact -->
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <div class="footer-contact">
+            <p>📍 Shop No 112, First Floor, The Business Hub, Karve Rd, opposite Mirch Masala Restaurant, Happy Colony, Kothrud, Pune 411038</p>
+            <p>📞 <a href="tel:9156972622">9156972622</a></p>
+            <p>💬 <a href="https://wa.me/919307360513">9307360513</a></p>
+            <p>⏰ Mon - Sun: 10 AM - 9 PM</p>
+          </div>
+        </div>
+
+        <!-- Col 4: Trust & Newsletter -->
+        <div class="footer-col">
+          <h4>Trust Badges</h4>
+          <div class="footer-badges">
+            <div class="f-badge"><i class="fas fa-certificate"></i> Certified Center</div>
+            <div class="f-badge"><i class="fas fa-leaf"></i> 100% Organic</div>
+            <div class="f-badge"><i class="fas fa-shield-alt"></i> Hygienic</div>
+          </div>
+          <h4 style="margin-top:20px">Newsletter</h4>
+          <p>Wellness tips ke liye subscribe karein</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Aapka email...">
+            <button class="btn-gold btn-sm">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p>© 2026 Mauli Ayurvedic Massage Therapy. All Rights Reserved. Designed by <a href="#">Leadknight</a>.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/919307360513" target="_blank" class="whatsapp-fab" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="whatsapp-tooltip">Chat with us!</span>
+</a>
+
+<!-- Therapy Popup Modal -->
+<div class="modal-overlay" id="therapyModal" onclick="closeModal(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeTherapyModal()">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
